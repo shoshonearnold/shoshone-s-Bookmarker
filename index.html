@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Site Bookmarker</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Cabin:500" type="text/css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Cabin:500"
+      type="text/css"
+      rel="stylesheet"
+    />
   </head>
 
   <body onload="fetchBookmarks()">
-
     <div class="container">
       <div class="header clearfix">
-        <nav>
-
-        </nav>
+        <nav></nav>
         <h2 class="text-muted">Shoshone's Bookmarker</h2>
       </div>
 
@@ -28,11 +34,21 @@
         <form id="myForm">
           <div class="form-group">
             <label>Site Name</label>
-            <input type="text" class="form-control" id="siteName" placeholder="Website Name">
+            <input
+              type="text"
+              class="form-control"
+              id="siteName"
+              placeholder="Website Name"
+            />
           </div>
           <div class="form-group">
             <label>Site URL</label>
-            <input type="text" class="form-control" id="siteUrl" placeholder="Website URL">
+            <input
+              type="text"
+              class="form-control"
+              id="siteUrl"
+              placeholder="Website URL"
+            />
           </div>
           <button type="submit" class="btn btn-primary">Submit</button>
         </form>
@@ -44,24 +60,31 @@
         </div>
       </div>
 
-      <div class="footerdiv">
-          <footer class="footer">
-            <p>[not] Copyright&copy; 2019 Shoshone Arnold</p>
-            <a href="https://github.com/shoshonearnold" target="_blank">
-              <i class="fab fa-github fa-2x"></i></a>
-            <a href="https://codepen.io/EastCoastShony/" target="_blank">
-              <i class="fab fa-codepen fa-2x"></i></a>
-            <a href="https://www.linkedin.com/in/shoshone-arnold/" target="_blank">
-              <i class="fab fa-linkedin fa-2x"></i></a>
-          </footer>
+      <div>
+        <footer>
+          <div class="signature">
+            <br />
+            <span id="my-name">
+              <p id="text">
+                Created with ☕ by<a
+                  href="https://heuristic-mayer-141d7c.netlify.com/"
+                  target="_blank"
+                >
+                  <span id="text">Shoshone Arnold</span></a
+                >
+              </p>
+            </span>
+          </div>
+        </footer>
       </div>
-      
-    </div> <!-- /container -->
+    </div>
+    <!-- /container -->
 
     <script
-    src="https://code.jquery.com/jquery-3.1.1.js"
-    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
-    crossorigin="anonymous"></script>
+      src="https://code.jquery.com/jquery-3.1.1.js"
+      integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+      crossorigin="anonymous"
+    ></script>
     <script src="bootstrap.min.js"></script>
     <script src="main.js"></script>
   </body>
