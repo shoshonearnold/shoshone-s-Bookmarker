@@ -1,7 +1,21 @@
 # shoshone-s-Bookmarker
-A basic book marker that lets you save any website URL under any keyword.
+This app saves your nookmarks for you.
 
-V1.0.2 update 4/14/2019
+## Release V 1.1: CSS and HTML schema update!
+index.html:
+```
+    - Re worked Html layout.
+```
 
-- css fixes
-performance fixes
+style.css:
+```
+    - Changed fonts and colors to have more minimal feel
+    - Added link badges to footer
+```     
+
+## What to expect next?
+
+    Responsive UI updates for mobile users!
+    Renaming saved booksmarks!
+    More bugs to squash!
+  
