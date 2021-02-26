@@ -1,5 +1,5 @@
 # shoshone-s-Bookmarker
-This app saves your nookmarks for you.
+This app saves your bookmarks for you.
 
 ## Release V 1.1: CSS and HTML schema update!
 index.html:
