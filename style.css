@@ -1,11 +1,17 @@
 * {
+  font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol;
 }
 
 body {
   padding-top: 20px;
   padding-bottom: 20px;
   font-family: 'Cabin', sans-serif;
-  background-color: #3542ff;
+  background-color: #ff9bc2;
+}
+
+.text-muted {
+  text-align: center;
+  color: #000000;
 }
 
 .header,
@@ -15,9 +21,8 @@ body {
   padding-left: 15px;
 }
 
-.text-muted {
-  text-align: center;
-  color: #ffd000;
+.jumbotron h2 {
+  padding-bottom: 2em;
 }
 
 .header {
@@ -25,7 +30,18 @@ body {
 }
 
 .btn-primary {
-  background-color: #3542ff;
+  padding-top: 2em;
+  color: #000000;
+  background-color: #ffea8b;
+  box-shadow: 0 4px 8px 0 #979797;
+  border-radius: 8px;
+}
+
+.btn-primary:hover {
+  color: #000000;
+  background-color: #ffd728;
+  box-shadow: 0 6px 16px 0 #979797;
+  transition: ease-in .1s;
 }
 
 .header h3 {
@@ -37,10 +53,12 @@ body {
 i {
   color: #000000;
   padding-right: 15px;
+  padding-top: .5em;
 }
 
 i:hover {
   color: #5d5e60;
+  transition: ease-in .1s;
 }
 
 .footer {
@@ -51,10 +69,16 @@ i:hover {
 
 #text {
   font-size: 16px;
+  color: #000000;
+}
+
+#text-span:hover {
+  color: #ffd728;
+  transition: ease-in .2s;
 }
 
 .signature {
-  margin-top: 5px;
+  margin-top: 13em;
   text-align: center;
   color: #000000;
 }
@@ -79,10 +103,14 @@ i:hover {
 }
 
 .jumbotron {
+  background-color: #ffffff63;
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  box-shadow: 0 4px 8px 0 #0000009a;
+
 }
+
 .jumbotron .btn {
+  margin-top: .9em;
   padding: 14px 24px;
   font-size: 21px;
 }
