@@ -14,7 +14,6 @@ style.css:
 main.js:
 ```
     - Included event listeners and id inclusions/removals if elements are clicked.
-    - 
 ``` 
 
 ## What to expect next?
