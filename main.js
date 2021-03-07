@@ -1,4 +1,18 @@
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
+document.getElementById('btn').addEventListener('click', showNavBar)
+document.getElementById('closed').addEventListener('click', closeNavBar)
+
+function showNavBar() {
+  document.getElementById('btn').classList.add('js');
+  document.getElementById('menu').classList.add('show');
+  document.getElementById('closed').classList.add('btn');
+}
+
+function closeNavBar() {
+  document.getElementById('btn').classList.remove('js');
+  document.getElementById('menu').classList.remove('show');
+  document.getElementById('closed').classList.remove('btn');
+}
 
 function saveBookmark(e) {
   var siteName =document.getElementById('siteName').value;
