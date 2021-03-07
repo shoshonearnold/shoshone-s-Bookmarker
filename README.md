@@ -1,7 +1,7 @@
 # shoshone-s-Bookmarker
 This app saves your bookmarks for you.
 
-## Release V 1.1.: Nav bar update!
+## Release V 1.1.1: Nav bar update!
 index.html:
 ```
     - Added click functions to toggle navbar.
