@@ -1,26 +1,29 @@
 # shoshone-s-Bookmarker
 This app saves your bookmarks for you.
 
-## Release V 1.1.1: Nav bar update!
+## Release V 1.1.2: History Recorder & Nav bar update!
 index.html:
 ```
-    - Added click functions to toggle navbar.
+    - Restructered divs to show history text correctly.
 ```
 
 style.css:
 ```
-    - Included CSS to show/remove visibility if btns/tabs are clicked.
+    - Styled history components.
+    - Re styled nav bar to work better with overall UI.
 ```     
 main.js:
 ```
-    - Included event listeners and id inclusions/removals if elements are clicked.
+    - Included event listeners for upcoming buttons.
+    - Included function to fetch history from local storage and save it to history.
+
 ``` 
 
 ## What to expect next?
 ```
+    Working on button to clear all bookmarks!
     Responsive UI updates for mobile users!
     Renaming saved bookmarks!
-    Saving list of bookmarks in history from current session.
     More bugs to squash!
 ```
   

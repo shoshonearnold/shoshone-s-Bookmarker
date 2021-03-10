@@ -14,6 +14,32 @@ body {
   color: #000000;
 }
 
+#moved-down {
+  position: fixed;
+  padding-top: 5em;
+  padding-left: 1.5em;
+}
+
+#history-block {
+  color: #1eff00;
+  background-color: #00000062;
+  border-radius: 8px;
+  min-height:20px;
+  padding:.7em;
+  margin-bottom:20px;
+  font-family: 'Source Code Pro', monospace;
+  font-style: italic;
+}
+
+#history-head {
+  color: rgb(255, 255, 255);
+  position: fixed;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 700;
+  border-bottom: solid 1px rgb(255, 255, 255);
+  margin: 1.8em 0 0 1.2em;
+}
+
 i {
   padding-top: 20px;
   z-index: 1;
@@ -63,7 +89,7 @@ i {
 #menu.show {
   transition: .2s ease-in;
   position: fixed;
-  background-color: #ffea8b;
+  background-color: #cc7a9a;
   margin: 0;
   padding: 0;
   justify-content: center;
@@ -73,6 +99,7 @@ i {
   overflow: hidden;
   visibility: visible;
   z-index: -1;
+  box-shadow: 0 4px 8px 0 #0000009a;
 }
 
 .header,
@@ -91,7 +118,7 @@ i {
   padding-bottom: 20px;
 }
 
-.btn-primary {
+.btn-primary, .btn-secondary {
   padding-top: 2em;
   color: #000000;
   background-color: #ffea8b;

@@ -1,6 +1,9 @@
 document.getElementById('myForm').addEventListener('submit', saveBookmark);
 document.getElementById('btn').addEventListener('click', showNavBar)
 document.getElementById('closed').addEventListener('click', closeNavBar)
+document.getElementById('myForm').addEventListener('submit', fetchHistory)
+document.getElementById('btn-secondary').addEventListener('reset', clearLocalStorage)
+
 
 function showNavBar() {
   document.getElementById('btn').classList.add('js');
@@ -14,6 +17,24 @@ function closeNavBar() {
   document.getElementById('closed').classList.remove('btn');
 }
 
+function fetchHistory() {
+  var bookmarkHistory = JSON.parse(localStorage.getItem('bookmarks'));
+  var bookmarkHistoryName = document.getElementById('saved-user-history');
+  bookmarkHistoryName.innerHTML = "";
+  for(var i = 0; i < bookmarkHistory.length; i++) {
+    var name = bookmarkHistory[i].name;
+    bookmarkHistoryName.innerHTML += '<div class="">' + '<h5 id="history-block">' + name + ' ----> added' + '</h5>' + '</div>';
+  }
+  //if (location.reload()) {
+  //  name.preventDefault(); // work on in 1.1.3
+  //}
+  
+}
+
+function clearLocalStorage() {
+  document.localStorage.clear();
+}
+ 
 function saveBookmark(e) {
   var siteName =document.getElementById('siteName').value;
   var siteUrl =document.getElementById('siteUrl').value;
